@@ -9,84 +9,197 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-container">
+      <div class="container--wide">
         <img src="img/images/logo.png" alt="Brath Logo" class="logo" />
         <nav class="primary-navigation">
           <ul>
-            <li>
+            <li class="primary-navigation__link">
               <a href="#">Die Metzgerei</a>
-              <a href="#">Dry Aged</a>
+            </li>
+            <li class="primary-navigation__link"><a href="#">Dry Aged</a></li>
+            <li class="primary-navigation__link">
               <a href="#">Fleischversand</a>
+            </li>
+            <li class="primary-navigation__link">
               <a href="#">Events/Kurse</a>
+            </li>
+            <li class="primary-navigation__link">
               <a href="#">Partyservice</a>
-              <a href="#">Tagesessen</a>
-              <a href="#">Impressum</a>
-              <a href="#">Kontakt</a>
-              <a href="#"
-                ><img
-                  src="img/icons/pdf.png"
-                  alt="PDF Icon"
-                  class="pdf-icon"
-                />&nbsp;download</a
-              >
+            </li>
+            <li class="primary-navigation__link"><a href="#">Tagesessen</a></li>
+            <li class="primary-navigation__link"><a href="#">Impressum</a></li>
+            <li class="primary-navigation__link"><a href="#">Kontakt</a></li>
+            <li class="primary-navigation__link">
+              <a href="#">
+                <img src="img/icons/pdf.png" alt="PDF Icon" class="pdf-icon" />
+                &nbsp;download
+              </a>
             </li>
           </ul>
         </nav>
       </div>
-      <div class="header-container">
+      <div class="container--wide">
         <p class="working-hours">
           <img
             src="img/icons/clock.png"
             alt="clock icon"
-            class="clock-icon"
-          /><strong>Opentime:</strong>&nbsp;Di.-Fr.:&nbsp;07:00-13:00 und
-          15:00-18:30.&nbsp;Sa.: 07:30-12:30
+            class="working-hours__icon" /><strong>Opentime:</strong
+          >&nbsp;Di.-Fr.:&nbsp;07:00-13:00 und 15:00-18:30.&nbsp;Sa.:
+          07:30-12:30
         </p>
       </div>
     </header>
     <main>
-      <section class="image-carousel">
-        <div class="slide-container">
-          <div class="slide">
+      <section class="hero" id="hero">
+        <div class="slider container--wide">
+          <div class="slider__img">
             <img src="img/images/image1.png" alt="Heiko Brath Metzgermeister" />
           </div>
-          <div class="slide">
+          <div class="slider__img">
             <img
               src="img/images/image1-2.jpg"
-              alt="Heiko Brath Metzgermeister"
-            />
+              alt="Heiko Brath Metzgermeister" />
           </div>
-          <div class="slide">
+          <div class="slider__img">
             <img
               src="img/images/image1-3.jpg"
-              alt="Heiko Brath Metzgermeister"
-            />
+              alt="Heiko Brath Metzgermeister" />
           </div>
-          <div class="slide">
+          <div class="slider__img">
             <img
               src="img/images/image1-4.jpg"
-              alt="Heiko Brath Metzgermeister"
-            />
+              alt="Heiko Brath Metzgermeister" />
           </div>
-          <div class="slide">
+          <div class="slider__img">
             <img
               src="img/images/image1-5.jpg"
-              alt="Heiko Brath Metzgermeister"
-            />
+              alt="Heiko Brath Metzgermeister" />
+          </div>
+          <div class="heiko-brath">
+            <h1 class="heiko-brath__heading">Heiko Brath Metzgermeister</h1>
+            <p class="heiko-brath__body">
+              Deutsches Ipsum Dolor deserunt dissentias Grimms Märchen et.
+              Tollit argumentum ius an. Pfannkuchen lobortis elaboraret per ne,
+              nam Aperol Spritz probatus pertinax.
+            </p>
+          </div>
+          <div class="dot">
+            <span class="dot__item" onclick="currentSlide(1)"></span
+            ><span class="dot__item" onclick="currentSlide(2)"></span
+            ><span class="dot__item" onclick="currentSlide(3)"></span
+            ><span class="dot__item" onclick="currentSlide(4)"></span
+            ><span class="dot__item" onclick="currentSlide(5)"></span>
           </div>
         </div>
-        <div class="dots">
-          <span class="dot" onclick="currentSlide(1)"></span
-          ><span class="dot" onclick="currentSlide(2)"></span
-          ><span class="dot" onclick="currentSlide(3)"></span
-          ><span class="dot" onclick="currentSlide(4)"></span
-          ><span class="dot" onclick="currentSlide(5)"></span>
+      </section>
+      <section class="dry-aged" id="dry-aged">
+        <div class="container">
+          <div class="dry-aged__info">
+            <h2 class="dry-aged__heading">Dry aged</h2>
+            <h3 class="dry-aged__subheading">Alte Wutz, Dry Aged</h3>
+            <p class="dry-aged__body">
+              Halt amet, consectetur Handtasche elit, sed do eiusmod tempor
+              Stuttgart ut labore et dolore magna 99 Luftballons Ut enim ad
+              minim veniam, Turnbeutel nostrud exercitation ullamco laboris nisi
+              Sprechen Sie deutsch aliquip ex ea commodo consequat. Wiener
+              Schnitzel aute irure dolor in reprehenderit Guten Tag mollit anim
+              Stuttgart.
+            </p>
+            <p class="dry-aged__body">
+              id latine indoctum complectitur HugoClub Mate mea meliore denique
+              nominavi id. Ohrwurm expetenda nam an, his ei Reise euismod
+              assentior.
+            </p>
+            <div class="dry-aged__buttons">
+              <a href="#dry-aged" class="button buttton--accent">Dry aged</a>
+              <a href="#dry-aged" class="button buttton--accent">Alte Wurtz</a>
+            </div>
+          </div>
+          <div class="dry-aged__images">
+            <img src="img/images/meat1.png" alt="Grilled Meat" />
+            <img src="img/images/meat2.png" alt="Beefsteak" />
+            <img src="img/images/meat3.png" alt="Venison" />
+            <img src="img/images/meat4.png" alt="Bacon" />
+          </div>
         </div>
       </section>
-      <section class="dry-aged">
+      <section class="grillkurs" id="grillkurs">
         <div class="container">
-          <div class="dry-aged-text"></div>
+          <div class="grillkurs__info">
+            <h2 class="grillkurs_heading">Buchen Sie den Grillkurs jetzt</h2>
+            <ul class="grillkurs__list">
+              <li>professioneller Lehrer</li>
+              <li>ausgezeichneter Metzger</li>
+              <li>1 Tag</li>
+              <li>lernen Sie die Kunst des Grillens</li>
+            </ul>
+            <a href="#grillkurs" class="button button--neutral">Grillkurs</a>
+          </div>
+          <div class="grillkurs__image">
+            <img src="img/images/meat5.png" alt="Grilled Skewers" />
+          </div>
         </div>
+      </section>
+      <section class="handwerk" id="handwerk">
+        <div class="container">
+          <div class="handwerk__info">
+            <h2 class="handwerk__heading">Das Handwerk</h2>
+            <h3 class="handwerk__subheading">
+              alles über unsere Hausgemachte Produkte
+            </h3>
+            <p class="handwerk__body">
+              Halt amet, consectetur Handtasche elit, sed do eiusmod tempor
+              Stuttgart ut labore et dolore magna 99 Luftballons Ut enim ad
+              minim veniam, Turnbeutel nostrud exercitation ullamco laboris nisi
+              Sprechen Sie deutsch aliquip ex ea commodo consequat.
+            </p>
+            <p class="handwerk__body">
+              Wiener Schnitzel aute irure dolor in Guten Tag mollit anim
+              Stuttgart.
+            </p>
+            <p class="handwerk__body">
+              id latine indoctum complectitur HugoClub Mate mea meliore denique
+              nominavi id. Ohrwurm expetenda nam an, his ei Reise euismod
+              assentior
+            </p>
+            <a href="#handwerk" class="button button--accent">Das Handwerk</a>
+          </div>
+          <div class="divider"></div>
+          <div class="handwerk__images">
+            <img src="img/images/wurst.png" alt="Wüustchen" />
+            <img src="img/images/hanch.png" alt="Hänchen" />
+            <img src="img/images/schwein.png" alt="Schwein" />
+            <img src="img/images/rind.png" alt="Rind" />
+          </div>
+        </div>
+      </section>
+      <section class="spices" id="spices">
+        <div class="container">
+          <div class="spices__info">
+            <h2 class="spices__heading">Custome spices for your meat</h2>
+            <h3 class="spices__subheading">
+              Turnbeutel nostrud exercitation ullamco Sprechen Sie deutsch
+            </h3>
+            <p class="spices__body">
+              Odio principes iracundia Müller Rice pri. Ut vel solum mandamus,
+              Kartoffelkopf natum adversarium ei ius, diam Schmetterling
+              honestatis eum.
+            </p>
+            <p class="spices__body">
+              Wiener Schnitzel amet, consectetur Handtasche elit, sed do eiusmod
+              tempor Stuttgart ut labore et dolore magna 99 Luftballons Ut enim
+              ad minim veniam, Turnbeutel nostrud exercitation ullamco laboris
+              nisi Sprechen Sie deutsch aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="spices__image">
+            <img src="img/images/spices.png" alt="Various spices" />
+          </div>
+        </div>
+      </section>
+      <section class="versand" id="versand">
+        <h2 class="versand__heading">Fleischversand</h2>
+        <a href="#versand" class="button button--neutral">Jetzt bestellen</a>
       </section>
     </main>
   </body>
