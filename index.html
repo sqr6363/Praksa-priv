@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" />
     <title>Brath</title>
   </head>
   <body>
@@ -52,43 +55,46 @@
     <main>
       <section class="hero" id="hero">
         <div class="slider container--wide">
-          <div class="slider__img">
+          <div class="slider__image">
             <img src="img/images/image1.png" alt="Heiko Brath Metzgermeister" />
           </div>
-          <div class="slider__img">
+          <div class="slider__image">
             <img
               src="img/images/image1-2.jpg"
               alt="Heiko Brath Metzgermeister" />
           </div>
-          <div class="slider__img">
+          <div class="slider__image">
             <img
               src="img/images/image1-3.jpg"
               alt="Heiko Brath Metzgermeister" />
           </div>
-          <div class="slider__img">
+          <div class="slider__image">
             <img
               src="img/images/image1-4.jpg"
               alt="Heiko Brath Metzgermeister" />
           </div>
-          <div class="slider__img">
+          <div class="slider__image">
             <img
               src="img/images/image1-5.jpg"
               alt="Heiko Brath Metzgermeister" />
           </div>
-          <div class="heiko-brath">
-            <h1 class="heiko-brath__heading">Heiko Brath Metzgermeister</h1>
-            <p class="heiko-brath__body">
+          <div class="hero__text">
+            <h1 class="hero__heading">Heiko Brath Metzgermeister</h1>
+            <p class="hero__body">
               Deutsches Ipsum Dolor deserunt dissentias Grimms Märchen et.
               Tollit argumentum ius an. Pfannkuchen lobortis elaboraret per ne,
               nam Aperol Spritz probatus pertinax.
             </p>
           </div>
-          <div class="dot">
-            <span class="dot__item" onclick="currentSlide(1)"></span
-            ><span class="dot__item" onclick="currentSlide(2)"></span
-            ><span class="dot__item" onclick="currentSlide(3)"></span
-            ><span class="dot__item" onclick="currentSlide(4)"></span
-            ><span class="dot__item" onclick="currentSlide(5)"></span>
+
+          <div class="slider__controls">
+            <div class="slider__arrow slider__arrow--left"></div>
+            <span class="slider__dot" onclick="currentSlide(1)"></span>
+            <span class="slider__dot" onclick="currentSlide(2)"></span>
+            <span class="slider__dot" onclick="currentSlide(3)"></span>
+            <span class="slider__dot" onclick="currentSlide(4)"></span>
+            <span class="slider__dot" onclick="currentSlide(5)"></span>
+            <div class="slider__arrow slider__arrow--right"></div>
           </div>
         </div>
       </section>
@@ -123,49 +129,48 @@
           </div>
         </div>
       </section>
-      <section class="grillkurs" id="grillkurs">
+      <section class="course" id="course">
         <div class="container">
-          <div class="grillkurs__info">
-            <h2 class="grillkurs_heading">Buchen Sie den Grillkurs jetzt</h2>
-            <ul class="grillkurs__list">
+          <div class="course__info">
+            <h2 class="course__heading">Buchen Sie den Grillkurs jetzt</h2>
+            <ul class="course__list">
               <li>professioneller Lehrer</li>
               <li>ausgezeichneter Metzger</li>
               <li>1 Tag</li>
               <li>lernen Sie die Kunst des Grillens</li>
             </ul>
-            <a href="#grillkurs" class="button button--neutral">Grillkurs</a>
+            <a href="#course" class="button button--neutral">Grillkurs</a>
           </div>
-          <div class="grillkurs__image">
+          <div class="course__image">
             <img src="img/images/meat5.png" alt="Grilled Skewers" />
           </div>
         </div>
       </section>
-      <section class="handwerk" id="handwerk">
+      <section class="craft" id="craft">
         <div class="container">
-          <div class="handwerk__info">
-            <h2 class="handwerk__heading">Das Handwerk</h2>
-            <h3 class="handwerk__subheading">
+          <div class="craft__info">
+            <h2 class="craft__heading">Das Handwerk</h2>
+            <h3 class="craft__subheading">
               alles über unsere Hausgemachte Produkte
             </h3>
-            <p class="handwerk__body">
+            <p class="craft__body">
               Halt amet, consectetur Handtasche elit, sed do eiusmod tempor
               Stuttgart ut labore et dolore magna 99 Luftballons Ut enim ad
               minim veniam, Turnbeutel nostrud exercitation ullamco laboris nisi
               Sprechen Sie deutsch aliquip ex ea commodo consequat.
             </p>
-            <p class="handwerk__body">
+            <p class="craft__body">
               Wiener Schnitzel aute irure dolor in Guten Tag mollit anim
               Stuttgart.
             </p>
-            <p class="handwerk__body">
+            <p class="craft__body">
               id latine indoctum complectitur HugoClub Mate mea meliore denique
               nominavi id. Ohrwurm expetenda nam an, his ei Reise euismod
               assentior
             </p>
-            <a href="#handwerk" class="button button--accent">Das Handwerk</a>
+            <a href="#craft" class="button button--accent">Das Handwerk</a>
           </div>
-          <div class="divider"></div>
-          <div class="handwerk__images">
+          <div class="craft__images">
             <img src="img/images/wurst.png" alt="Wüustchen" />
             <img src="img/images/hanch.png" alt="Hänchen" />
             <img src="img/images/schwein.png" alt="Schwein" />
@@ -197,10 +202,127 @@
           </div>
         </div>
       </section>
-      <section class="versand" id="versand">
-        <h2 class="versand__heading">Fleischversand</h2>
-        <a href="#versand" class="button button--neutral">Jetzt bestellen</a>
+      <section class="shipping" id="shipping">
+        <h2 class="shipping__heading">Fleischversand</h2>
+        <a href="#shipping" class="button button--neutral">Jetzt bestellen</a>
+      </section>
+      <section class="network" id="network">
+        <div class="container">
+          <div class="network__logo">
+            <img src="img/images/jrelogo.png" alt="Genussnetz logo" />
+          </div>
+          <div class="network__body">
+            <h2 class="network__heading">
+              Metzgerei Brath ist Mitglied im Genussnetzwerk
+            </h2>
+            <a href="#network" class="button button--accent">Gehen zu site</a>
+          </div>
+        </div>
+      </section>
+      <section class="awards" id="awards">
+        <div class="container">
+          <h2 class="awards__heading">Auszeichnungen</h2>
+          <div class="awards__gallery">
+            <div class="awards__item">
+              <img
+                src="img/images/specoffer.png"
+                alt="Special Offer Award Medal"
+                class="awards__medal" />
+              <p class="awards__description">
+                Tollit argumentum genau Saepe lobortis
+              </p>
+            </div>
+            <div class="awards__item">
+              <img
+                src="img/images/genuine.png"
+                alt="The Genuine Quality Award Medal"
+                class="awards__medal" />
+              <p class="awards__description">Schneewittchen denique</p>
+            </div>
+            <div class="awards__item">
+              <img
+                src="img/images/bestchoice.png"
+                alt="The Best Choice Award Medal"
+                class="awards__medal" />
+              <p class="awards__description">Grimms Märchen expetenda</p>
+            </div>
+            <div class="awards__item">
+              <img
+                src="img/images/highq.png"
+                alt="Highest Quality Award Medal"
+                class="awards__medal" />
+              <p class="awards__description">Mettwurst mei ullum gloriatur.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonials" id="testimonials">
+        <div class="container">
+          <p class="testimonials__intro">Empfehlungs</p>
+          <h2 class="testimonials__heading">Was die Leute über uns sagen</h2>
+          <div class="testimonials__carousel">
+            <div class="testimonials__card"></div>
+            <div class="testimonials__card"></div>
+            <div class="testimonials__card"></div>
+            <div class="testimonials__controls"></div>
+          </div>
+          <a href="#testimonials" class="button button--accent"
+            >Alle Berichte</a
+          >
+        </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="container--wide">
+        <div class="footer__info">
+          <div class="contact">
+            <div class="contact__address">
+              <img src="img/icons/" alt="" /><span
+                class="lnr lnr-map-marker"></span
+              >&nbsp;Klauprechtstraße 25 76137 Karlsruhe, Germany
+            </div>
+            <div class="contact__phone">
+              <span class="lnr lnr-phone"></span>&nbsp;+49 721 358060
+            </div>
+            <div class="contact__email">
+              <span class="lnr lnr-envelope"></span
+              >&nbsp;info@partyservice-brath.de
+            </div>
+          </div>
+          <div class="footer__logo">
+            <img src="img/images/logo.png" alt="Brath Logo" />
+          </div>
+          <div class="social">
+            <p class="social__text">Besuchen Sie uns auf:</p>
+            <a href="https://twitter.com/Metzger_Brath" class="social__links"
+              ><img src="img/icons/twitter.png" alt="Twitter"
+            /></a>
+            <a
+              href="https://www.facebook.com/Metzgerei-Brath-136882979743293/"
+              class="social__links"
+              ><img src="img/icons/facebook.png" alt="Facebook"
+            /></a>
+            <a
+              href="https://www.instagram.com/heikobrath/?hl=de"
+              class="social__links"
+              ><img src="img/icons/instagram.png" alt="Instagram"
+            /></a>
+            <a
+              href="https://www.youtube.com/channel/UCTAD_g25J5rpa-GmMThbUlA"
+              class="social__links"
+              ><img src="img/icons/youtube.png" alt="Youtube"
+            /></a>
+          </div>
+        </div>
+        <div class="copyright">
+          <p class="copyright__store">
+            &copy;&nbsp;2020 by Metzgerei Heiko Brath GmbH, Deutschland
+          </p>
+          <p class="copyright__code">
+            Code and design by <em><u>StudioPresent</u></em>
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
