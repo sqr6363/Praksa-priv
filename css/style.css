@@ -1,2 +1,2 @@
-*,:after,:before{box-sizing:border-box;margin:0;padding:0}html:focus-within{scroll-behavior:smooth}body{text-rendering:optimizeSpeed}img,picture,svg{display:block;max-width:100%}button{font:inherit}
+*,:after,:before{box-sizing:border-box;margin:0;padding:0}html:focus-within{scroll-behavior:smooth}body{text-rendering:optimizeSpeed}img,picture,svg{display:block;max-width:100%}button{font:inherit}.container{margin-inline:auto;width:min(68.5rem,100% - 2rem)}.container--wide{margin-inline:auto;width:min(82.5rem,100% - 2rem)}
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,9 @@
+.container {
+  width: min(68.5rem, 100% - 2rem);
+  margin-inline: auto;
+}
+
+.container--wide {
+  width: min(82.5rem, 100% - 2rem);
+  margin-inline: auto;
+}
