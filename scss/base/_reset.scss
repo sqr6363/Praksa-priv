@@ -12,6 +12,7 @@ html:focus-within {
 
 body {
   text-rendering: optimizeSpeed;
+  line-height: 1.5;
 }
 
 img,
@@ -23,4 +24,9 @@ svg {
 
 button {
   font: inherit;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
 }

@@ -1,9 +1,18 @@
+@use "abstracts" as *;
+
 .container {
   width: min(68.5rem, 100% - 2rem);
   margin-inline: auto;
+  display: flex;
 }
 
 .container--wide {
   width: min(82.5rem, 100% - 2rem);
   margin-inline: auto;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: $text-color;
 }
