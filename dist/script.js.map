@@ -1,1 +1,1 @@
-{"version":3,"file":"script.js","names":["hamburger","document","querySelector","addEventListener","this","classList","toggle"],"sources":["script.js"],"mappings":"AAAA,MAAMA,UAAYC,SAASC,cAAc,cAEzCF,UAAUG,iBAAiB,SAAS,KAClCC,KAAKC,UAAUC,OAAO,SAAS"}
+{"version":3,"file":"script.js","names":["hamburger","document","querySelector","addEventListener","this","classList","toggle"],"sources":["script.js"],"mappings":"AAAA,MAAMA,UAAYC,SAASC,cAAc,cAEzCF,UAAUG,iBAAiB,SAAS,WAClCC,KAAKC,UAAUC,OAAO,SACxB"}

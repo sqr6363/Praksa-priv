@@ -9,9 +9,16 @@
     width: 100%;
     max-height: 6rem;
     display: flex;
+    gap: 2.5rem;
     justify-content: space-between;
     font-weight: 700;
     position: relative;
+
+    @include mqMax(40em) {
+      gap: 1rem;
+      padding-block: 1.25rem;
+      justify-content: flex-end;
+    }
 
     .logo {
       max-width: 11rem;
@@ -21,6 +28,7 @@
       @include mqMax(40em) {
         max-width: 6rem;
         left: -1rem;
+        top: 0;
       }
     }
 
@@ -36,106 +44,100 @@
         user-select: none;
       }
 
-      a {
-        transition: 0.4s;
-
-        &:hover {
-          color: $bg-primary-color;
-
-          path {
-            fill: $bg-primary-color;
-          }
-        }
-      }
-
-      path {
-        transition: 0.4s;
-      }
-
-      .download {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        user-select: none;
-
-        @include mqMax(40em) {
-          font-size: 0.875rem;
-        }
-      }
-
-      .hamburger {
-        display: none;
-        user-select: none;
-        appearance: none;
-        border: none;
-        background: none;
-        cursor: pointer;
-
-        &:hover {
-          span {
-            background-color: $bg-primary-color;
-
-            &:nth-child(2) {
-              transform: translateX(0.25rem);
-            }
-          }
-        }
-
-        &.active {
-          span {
-            &:nth-child(1) {
-              transform: translate(0.1rem, 0.125rem) rotate(45deg);
-            }
-
-            &:nth-child(2) {
-              opacity: 0;
-            }
-
-            &:nth-child(3) {
-              transform: translateY(-0.1rem) rotate(-45deg);
-            }
-          }
-
-          &:hover {
-            background-color: $bg-primary-color;
-          }
-        }
-
-        span {
-          display: block;
-          width: 1.75rem;
-          height: 0.2rem;
-          background-color: $text-color;
-          border: 0;
-          outline: 0;
-          border-radius: 0.5rem;
-          transform-origin: 0 0;
-          transition: 0.4s;
-        }
-      }
-
       @include mqMax(40em) {
         gap: 1rem;
         padding-block: 0.7rem;
+        display: none;
+        font-size: 0.875rem;
+      }
+    }
 
-        .nav-link {
-          display: none;
-          font-size: 0.875rem;
+    a {
+      transition: all 0.4s;
+
+      &:hover {
+        color: $bg-primary-color;
+
+        path {
+          fill: $bg-primary-color;
+        }
+      }
+    }
+
+    path {
+      transition: all 0.4s;
+    }
+
+    .download {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      user-select: none;
+
+      @include mqMax(40em) {
+        font-size: 0.875rem;
+      }
+    }
+
+    .hamburger {
+      display: none;
+      user-select: none;
+      appearance: none;
+      border: none;
+      background: none;
+      cursor: pointer;
+
+      &:hover {
+        span {
+          background-color: $bg-primary-color;
+
+          &:nth-child(2) {
+            transform: translateX(0.35rem);
+          }
+        }
+      }
+
+      &.active {
+        span {
+          &:nth-child(1) {
+            transform: translate(0.1rem, 0.78rem) rotate(135deg);
+          }
+
+          &:nth-child(2) {
+            transform: translateX(1.35rem);
+            opacity: 0;
+          }
+
+          &:nth-child(3) {
+            transform: translate(0.1rem, -0.78rem) rotate(-135deg);
+          }
         }
 
-        .lnr {
-          line-height: 1.5;
-          font-size: 2rem;
-          font-weight: 600;
-          padding-inline: 0.25rem;
+        &:hover {
+          span {
+            background-color: $bg-primary-color;
+          }
         }
+      }
 
-        .hamburger {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          gap: 0.5rem;
-        }
+      span {
+        display: block;
+        width: 1.75rem;
+        height: 0.2rem;
+        background-color: $text-color;
+        border: 0;
+        outline: 0;
+        border-radius: 0.5rem;
+        transform-origin: 50% 50%;
+        transition: all 0.4s;
+      }
+
+      @include mqMax(40em) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 0.5rem;
+        padding-inline: 0.5rem;
       }
     }
   }
