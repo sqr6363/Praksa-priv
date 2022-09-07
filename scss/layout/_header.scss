@@ -32,22 +32,86 @@
       gap: 2.5rem;
       padding-block: 2rem;
 
-      a:hover {
-        color: $bg-primary-color;
+      .nav-link {
+        user-select: none;
+      }
 
-        path {
-          fill: $bg-primary-color;
+      a {
+        transition: 0.4s;
+
+        &:hover {
+          color: $bg-primary-color;
+
+          path {
+            fill: $bg-primary-color;
+          }
         }
+      }
+
+      path {
+        transition: 0.4s;
       }
 
       .download {
         display: flex;
         align-items: center;
         gap: 0.5rem;
+        user-select: none;
+
+        @include mqMax(40em) {
+          font-size: 0.875rem;
+        }
       }
 
-      .menu {
+      .hamburger {
         display: none;
+        user-select: none;
+        appearance: none;
+        border: none;
+        background: none;
+        cursor: pointer;
+
+        &:hover {
+          span {
+            background-color: $bg-primary-color;
+
+            &:nth-child(2) {
+              transform: translateX(0.25rem);
+            }
+          }
+        }
+
+        &.active {
+          span {
+            &:nth-child(1) {
+              transform: translate(0.1rem, 0.125rem) rotate(45deg);
+            }
+
+            &:nth-child(2) {
+              opacity: 0;
+            }
+
+            &:nth-child(3) {
+              transform: translateY(-0.1rem) rotate(-45deg);
+            }
+          }
+
+          &:hover {
+            background-color: $bg-primary-color;
+          }
+        }
+
+        span {
+          display: block;
+          width: 1.75rem;
+          height: 0.2rem;
+          background-color: $text-color;
+          border: 0;
+          outline: 0;
+          border-radius: 0.5rem;
+          transform-origin: 0 0;
+          transition: 0.4s;
+        }
       }
 
       @include mqMax(40em) {
@@ -59,14 +123,18 @@
           font-size: 0.875rem;
         }
 
-        .menu {
-          display: block;
-        }
-
         .lnr {
           line-height: 1.5;
           font-size: 2rem;
           font-weight: 600;
+          padding-inline: 0.25rem;
+        }
+
+        .hamburger {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          gap: 0.5rem;
         }
       }
     }
