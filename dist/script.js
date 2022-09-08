@@ -1,2 +1,2 @@
-const hamburger=document.querySelector(".hamburger");hamburger.addEventListener("click",(function(){this.classList.toggle("active")}));
+const hamburger=document.querySelector(".hamburger"),menu=document.querySelector(".navigation");hamburger.addEventListener("click",(function(){this.classList.toggle("active"),menu.classList.toggle("mobile")}));
 //# sourceMappingURL=script.js.map
