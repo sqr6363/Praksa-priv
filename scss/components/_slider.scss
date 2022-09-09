@@ -1,0 +1,35 @@
+@use "abstracts" as *;
+
+.slider {
+  position: relative;
+  user-select: none;
+
+  &__image {
+    display: none;
+  }
+
+  &__controls {
+    position: absolute;
+    bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  &__arrow {
+    cursor: pointer;
+    font-size: 2rem;
+    color: $text-color;
+  }
+
+  &__dot {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: $text-color;
+    border: 1px solid black;
+  }
+}

@@ -1,5 +1,10 @@
 @use "abstracts" as *;
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 .container {
   width: min(68.5rem, 100% - 2rem);
   margin-inline: auto;
