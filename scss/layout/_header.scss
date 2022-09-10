@@ -67,6 +67,7 @@
         top: 0;
         right: -1rem;
         padding: 0;
+        z-index: 999;
 
         background-color: $hf-color-light;
         transform: translateX(100%);
@@ -107,6 +108,10 @@
 
       @include mqMax(70em) {
         font-size: 0.875rem;
+      }
+
+      p {
+        font-weight: 700;
       }
     }
 

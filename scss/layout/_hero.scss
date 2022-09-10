@@ -1,0 +1,28 @@
+@use "abstracts" as *;
+
+.hero__text {
+  background-color: $bg-mobile-color;
+  color: $text-color;
+  text-align: center;
+
+  .hero__heading {
+    margin-inline: 1rem;
+    line-height: 1.2;
+    font-family: "Roboto Condensed", sans-serif;
+    padding-block: 0.5rem;
+  }
+
+  .hero__body {
+    margin-inline: 1rem;
+    padding-block: 0.5rem;
+  }
+
+  @include mq(60em) {
+    background-color: $black-light;
+    position: absolute;
+    top: 20%;
+    width: 33%;
+    padding: 4rem 1.5rem 4rem 17.5rem;
+    text-align: left;
+  }
+}

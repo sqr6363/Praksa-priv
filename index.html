@@ -9,6 +9,9 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
       rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap"
+      rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
@@ -105,13 +108,17 @@
           </div>
 
           <div class="slider__controls">
-            <span class="lnr lnr-chevron-left-circle slider__arrow"></span>
-            <span class="slider__dot"></span>
-            <span class="slider__dot"></span>
-            <span class="slider__dot"></span>
-            <span class="slider__dot"></span>
-            <span class="slider__dot"></span>
-            <span class="lnr lnr-chevron-right-circle slider__arrow"></span>
+            <span
+              class="lnr lnr-chevron-left-circle slider__arrow"
+              onclick="plusSlides(-1)"></span>
+            <span class="slider__dot" onclick="currentSlide(1)"></span>
+            <span class="slider__dot" onclick="currentSlide(2)"></span>
+            <span class="slider__dot" onclick="currentSlide(3)"></span>
+            <span class="slider__dot" onclick="currentSlide(4)"></span>
+            <span class="slider__dot" onclick="currentSlide(5)"></span>
+            <span
+              class="lnr lnr-chevron-right-circle slider__arrow"
+              onclick="plusSlides(1)"></span>
           </div>
 
           <div class="hero__text">
@@ -303,9 +310,8 @@
         <div class="footer__info">
           <div class="contact">
             <div class="contact__address">
-              <img src="img/icons/" alt="" /><span
-                class="lnr lnr-map-marker"></span
-              >&nbsp;Klauprechtstraße 25 76137 Karlsruhe, Germany
+              <span class="lnr lnr-map-marker"></span>&nbsp;Klauprechtstraße 25
+              76137 Karlsruhe, Germany
             </div>
             <div class="contact__phone">
               <span class="lnr lnr-phone"></span>&nbsp;+49 721 358060

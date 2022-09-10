@@ -1,0 +1,9 @@
+@keyframes fade {
+  0% {
+    filter: blur(1.5rem);
+  }
+
+  100% {
+    filter: blur(0);
+  }
+}

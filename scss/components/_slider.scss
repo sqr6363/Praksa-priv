@@ -6,30 +6,76 @@
 
   &__image {
     display: none;
+    background-color: $bg-primary-color;
+
+    img {
+      animation-name: fade;
+      animation-duration: 0.7s;
+      width: 100%;
+    }
   }
 
   &__controls {
     position: absolute;
-    bottom: 1rem;
+    bottom: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
     text-align: center;
     width: 100%;
+
+    @include mqMax(60em) {
+      bottom: 9rem;
+    }
+
+    @include mqMax(40em) {
+      bottom: 14rem;
+      gap: 1rem;
+    }
   }
 
   &__arrow {
     cursor: pointer;
     font-size: 2rem;
     color: $text-color;
+    transition: all 0.4s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    &:active {
+      transform: scale(1);
+      transition: 0.1s;
+    }
+
+    @include mqMax(40em) {
+      font-size: 1.5rem;
+    }
   }
 
   &__dot {
+    cursor: pointer;
     width: 1rem;
     height: 1rem;
     border-radius: 50%;
     background-color: $text-color;
-    border: 1px solid black;
+    border: 2px solid $text-color;
+    outline: 1px solid black;
+    transition: all 0.4s;
+
+    &:hover {
+      background-color: $bg-accent-color;
+    }
+
+    @include mqMax(40em) {
+      width: 0.75rem;
+      height: 0.75rem;
+    }
+  }
+
+  .active {
+    background-color: $bg-accent-color;
   }
 }
