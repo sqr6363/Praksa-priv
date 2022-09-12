@@ -1,0 +1,32 @@
+@use "abstracts" as *;
+
+.dry-aged {
+  background-color: $bg-mobile-color;
+  color: $text-color;
+
+  .container {
+    flex-direction: column-reverse;
+
+    .dry-aged__info {
+      text-align: center;
+      padding-top: 0.5rem;
+    }
+
+    .dry-aged__gallery {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      .gallery-bottom {
+        display: flex;
+
+        gap: 0.5rem;
+
+        img {
+          flex-grow: 1;
+          width: 30%;
+        }
+      }
+    }
+  }
+}

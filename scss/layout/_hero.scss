@@ -20,9 +20,28 @@
   @include mq(60em) {
     background-color: $black-light;
     position: absolute;
-    top: 20%;
+    top: 10%;
     width: 33%;
-    padding: 4rem 1.5rem 4rem 17.5rem;
+    padding: 1rem;
     text-align: left;
+  }
+
+  @include mq(75em) {
+    padding: 2rem 1rem 2rem 6rem;
+    top: 15%;
+  }
+
+  @include mq(90em) {
+    padding: 4rem 1.5rem 4rem 10rem;
+  }
+
+  @include mq(120em) {
+    padding: 4rem 2rem 4rem 17.5rem;
+    top: 20%;
+  }
+
+  @include mq(150em) {
+    padding: 5rem 2rem 5rem 25rem;
+    top: 25%;
   }
 }
