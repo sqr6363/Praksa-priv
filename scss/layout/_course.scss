@@ -1,0 +1,31 @@
+@use "abstracts" as *;
+
+.course {
+  background-color: $bg-accent-color;
+  color: $text-color;
+  text-align: center;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    .course__info {
+      padding-block: 5rem;
+
+      .course__list {
+        padding-block: 5rem;
+        list-style-position: inside;
+
+        li {
+          padding-block: 0.5rem;
+        }
+      }
+    }
+
+    .course__image {
+      width: 100vw;
+      overflow: visible;
+      align-self: center;
+    }
+  }
+}
