@@ -10,7 +10,7 @@
     flex-direction: column;
 
     .course__info {
-      padding-block: 5rem;
+      padding-block: 7rem;
 
       .course__list {
         padding-block: 5rem;
@@ -20,12 +20,29 @@
           padding-block: 0.5rem;
         }
       }
+
+      @include mq(60em) {
+        width: 50vw;
+      }
     }
 
     .course__image {
       width: 100vw;
       overflow: visible;
       align-self: center;
+
+      @include mq(60em) {
+        width: 50vw;
+        overflow: visible;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    @include mq(60em) {
+      flex-direction: row;
     }
   }
 }
