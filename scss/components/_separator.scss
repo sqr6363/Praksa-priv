@@ -1,0 +1,42 @@
+@use "abstracts" as *;
+
+.separator {
+  position: relative;
+  overflow: visible;
+  border: none;
+  background-color: $separator-line;
+  height: 1px;
+  margin-block: 3rem;
+  z-index: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 4.5rem;
+    height: 4.5rem;
+    background-image: url(/img/images/separator.png);
+    background-size: contain;
+    top: -2.25rem;
+    left: 50%;
+    margin-left: -2.25rem;
+    z-index: 999;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 5.5rem;
+    height: 5.5rem;
+    top: -2.75rem;
+    left: 50%;
+    margin-left: -2.75rem;
+    background-color: $bg-mobile-color;
+    z-index: 99;
+
+    @include mq(60em) {
+      background-color: $bg-primary-color;
+    }
+  }
+}

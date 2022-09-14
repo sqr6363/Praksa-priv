@@ -1,0 +1,62 @@
+@use "abstracts" as *;
+
+.craft {
+  background-color: $bg-mobile-color;
+  color: $text-color;
+
+  @include mq(60em) {
+    background-color: $bg-primary-color;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    .craft__info {
+      text-align: center;
+      padding-block: 3rem;
+
+      .craft__subheading {
+        padding-inline: 2rem;
+      }
+
+      .craft__body:first-of-type {
+        padding-top: 3rem;
+      }
+
+      .craft__body:nth-of-type(2) {
+        padding-block: 1rem;
+      }
+
+      .craft__body:last-of-type {
+        padding-bottom: 3rem;
+      }
+
+      @include mq(60em) {
+        padding-inline: 14rem;
+      }
+    }
+
+    .craft__images {
+      display: flex;
+      gap: 1rem;
+      padding-top: 3rem;
+      padding-bottom: 6rem;
+      flex-wrap: wrap;
+      width: 100%;
+
+      img {
+        width: 40%;
+        flex: 1;
+      }
+
+      @include mq(60em) {
+        flex-wrap: nowrap;
+
+        img {
+          width: 20%;
+        }
+      }
+    }
+  }
+}
