@@ -1,0 +1,78 @@
+@use "abstracts" as *;
+
+.spices {
+  background-color: $bg-accent-color;
+  color: $text-color;
+  text-align: center;
+  max-height: 55rem;
+  overflow-y: hidden;
+  display: flex;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+    .spices__info {
+      padding-block: 3rem;
+      align-self: center;
+
+      .spices__heading {
+        padding: 0 2rem 1rem;
+
+        @include mq(60em) {
+          padding: 0 0 0 7rem;
+        }
+      }
+
+      .spices__subheading {
+        padding: 0 1rem 2rem;
+
+        @include mq(60em) {
+          padding: 0.5rem 5rem 2rem 7rem;
+        }
+      }
+
+      .spices__body {
+        padding-bottom: 1rem;
+
+        @include mq(60em) {
+          padding: 0 0 1rem 7rem;
+        }
+      }
+
+      @include mq(60em) {
+        width: 20%;
+        flex-grow: 1;
+        text-align: left;
+      }
+    }
+
+    .spices__image {
+      width: 100vw;
+      align-self: center;
+
+      @include mqMax(40em) {
+        img {
+          width: 100%;
+        }
+      }
+
+      @include mq(60em) {
+        width: 20%;
+        flex-grow: 1;
+        direction: rtl;
+      }
+
+      @include mq(120em) {
+        img {
+          width: 50vw;
+        }
+      }
+    }
+
+    @include mq(60em) {
+      flex-direction: row-reverse;
+    }
+  }
+}
