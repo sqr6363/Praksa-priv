@@ -1,5 +1,21 @@
 @use "abstracts" as *;
 
 .shipping {
+  background-color: $bg-primary-color;
   background-image: url(/img/images/meat-on-board.png);
+  height: 33.75rem;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: lighten;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: $text-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__heading {
+    padding-bottom: 2.5rem;
+  }
 }

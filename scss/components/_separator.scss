@@ -8,6 +8,8 @@
   height: 1px;
   margin-block: 3rem;
   z-index: 1;
+  display: inline-block;
+  width: 100%;
 
   &::after {
     content: "";

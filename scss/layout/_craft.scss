@@ -6,6 +6,7 @@
 
   @include mq(60em) {
     background-color: $bg-primary-color;
+    padding-block: 4rem;
   }
 
   .container {

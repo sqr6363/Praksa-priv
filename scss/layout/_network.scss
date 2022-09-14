@@ -1,0 +1,58 @@
+@use "abstracts" as *;
+
+.network {
+  background-color: $bg-mobile-color;
+  color: $text-color;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    .network__logo {
+      padding-block: 3rem;
+
+      img {
+        width: 100%;
+      }
+
+      @include mq(60em) {
+        width: 40%;
+        flex-grow: 1;
+        padding-right: 8rem;
+      }
+    }
+
+    .network__body {
+      text-align: center;
+
+      .network__heading {
+        padding-block: 3rem;
+      }
+
+      @include mq(60em) {
+        width: 40%;
+        flex-grow: 1;
+        text-align: left;
+        padding-left: 8rem;
+      }
+    }
+
+    .separator {
+      margin-block: 6rem;
+
+      @include mq(60em) {
+        margin-top: 8rem;
+      }
+    }
+
+    @include mq(60em) {
+      flex-flow: row wrap;
+      align-items: center;
+    }
+  }
+
+  @include mq(60em) {
+    background-color: $bg-primary-color;
+    padding-block: 6rem;
+  }
+}
