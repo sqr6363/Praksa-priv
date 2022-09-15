@@ -4,7 +4,6 @@
   background-color: $bg-accent-color;
   color: $text-color;
   text-align: center;
-  max-height: 42rem;
   overflow: hidden;
   display: flex;
 
@@ -23,6 +22,10 @@
 
         li {
           padding-block: 0.5rem;
+        }
+
+        @include mq(60em) {
+          padding: 2rem 0 4rem 0;
         }
       }
 
@@ -61,6 +64,7 @@
 
     @include mq(60em) {
       flex-direction: row;
+      max-height: 42rem;
     }
   }
 }

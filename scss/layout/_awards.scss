@@ -1,0 +1,68 @@
+@use "abstracts" as *;
+
+.awards {
+  background-color: $bg-mobile-color;
+  color: $text-color;
+  text-align: center;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    .awards__heading {
+      padding-bottom: 5rem;
+
+      @include mq(60em) {
+        padding-right: 4rem;
+      }
+    }
+
+    .awards__gallery {
+      display: flex;
+      flex-wrap: wrap;
+
+      .awards__item {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        flex-grow: 1;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        padding-bottom: 3rem;
+
+        .awards__medal {
+          display: flex;
+          max-width: 9rem;
+        }
+
+        .awards__description {
+          color: $text-color-light;
+        }
+      }
+
+      @include mq(60em) {
+        flex-wrap: nowrap;
+      }
+    }
+
+    @include mq(60em) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .awards__gallery {
+        flex-grow: 1;
+      }
+    }
+
+    .separator {
+      margin-block: 7rem;
+    }
+  }
+
+  @include mq(60em) {
+    background-color: $bg-primary-color;
+  }
+}

@@ -1,0 +1,19 @@
+@use "abstracts" as *;
+
+.footer {
+  background-color: $bg-accent-color;
+  color: $text-color;
+  text-align: center;
+
+  .container--wide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.copyright {
+  background-color: $cc-color;
+  color: $text-color-light;
+}

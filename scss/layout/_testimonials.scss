@@ -1,0 +1,106 @@
+@use "abstracts" as *;
+
+.testimonials {
+  background-color: $bg-mobile-color;
+  color: $text-color;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .testimonials__intro {
+      color: $text-color-light;
+      font-weight: 700;
+    }
+
+    .testimonials__heading {
+      padding: 0.5rem 2rem 4rem;
+    }
+
+    .testimonials__carousel {
+      height: 30rem;
+
+      .testimonials__card {
+        background-color: $testimonial-card;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 21rem;
+        max-width: 27rem;
+
+        .testimonials__image {
+          max-width: 5rem;
+          padding-top: 2rem;
+        }
+
+        .testimonials__stars {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.5rem;
+          padding-block: 1rem;
+
+          img:first-of-type {
+            transform: scale(0.7);
+          }
+
+          img:last-of-type {
+            transform: scale(0.7);
+          }
+        }
+
+        .testimonials__body {
+          padding-inline: 1rem;
+
+          &:first-of-type {
+            color: $testimonial-text;
+            padding-block: 1rem;
+          }
+
+          &:nth-of-type(2) {
+            font-weight: 400;
+            padding-top: 2rem;
+          }
+
+          &:last-of-type {
+            color: $testimonial-text;
+            padding-bottom: 3rem;
+          }
+        }
+      }
+
+      .testimonials__controls {
+        padding-block: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+        .testimonials__arrow {
+          font-size: 4rem;
+          transition: all 0.4s;
+
+          &:hover {
+            transform: scale(1.15);
+          }
+
+          &:active {
+            transform: scale(1);
+            transition: none;
+          }
+        }
+      }
+    }
+
+    .testimonials__button {
+      padding: 6rem 0 8rem;
+    }
+  }
+
+  @include mq(60em) {
+    background-color: $bg-primary-color;
+  }
+}
