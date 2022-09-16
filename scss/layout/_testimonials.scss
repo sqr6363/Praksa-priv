@@ -11,7 +11,7 @@
     text-align: center;
 
     .testimonials__intro {
-      color: $text-color-light;
+      color: $testimonial-text;
       font-weight: 700;
     }
 
@@ -20,10 +20,11 @@
     }
 
     .testimonials__carousel {
-      height: 30rem;
+      height: 26rem;
       position: relative;
       display: flex;
-      gap: 2rem;
+      align-items: center;
+      gap: 1rem;
 
       .testimonials__card {
         background-color: $testimonial-card;
@@ -59,7 +60,6 @@
           padding-inline: 1rem;
 
           &:first-of-type {
-            color: $testimonial-text;
             padding-block: 1rem;
           }
 
@@ -69,7 +69,6 @@
           }
 
           &:last-of-type {
-            color: $testimonial-text;
             padding-bottom: 3rem;
           }
         }
@@ -83,7 +82,7 @@
         gap: 2rem;
         position: absolute;
         left: 50%;
-        top: 110%;
+        top: 115%;
         transform: translate(-50%, -50%);
 
         .testimonials__arrow {
@@ -99,6 +98,20 @@
             transition: none;
           }
         }
+      }
+
+      .card--previous {
+        background-color: $testimonial-card-inactive;
+        color: $testimonial-text-inactive;
+        font-size: 0.75rem;
+        padding-top: 6.5rem;
+      }
+
+      .card--next {
+        background-color: $testimonial-card-inactive;
+        color: $testimonial-text-inactive;
+        font-size: 0.75rem;
+        padding-top: 6.5rem;
       }
     }
 
