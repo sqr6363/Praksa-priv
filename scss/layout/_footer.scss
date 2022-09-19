@@ -10,10 +10,38 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    .contact {
+      padding-block: 2rem;
+    }
+
+    .footer__logo {
+      padding-block: 2rem;
+
+      img {
+        max-width: 8rem;
+      }
+    }
   }
 }
 
 .copyright {
   background-color: $cc-color;
   color: $text-color-light;
+
+  .container--wide {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    font-size: 0.75rem;
+    padding-block: 2rem;
+
+    .sqr {
+      font-weight: 700;
+      font-style: italic;
+      text-decoration: underline;
+      color: $testimonial-text;
+    }
+  }
 }
