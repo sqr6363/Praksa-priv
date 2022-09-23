@@ -9,6 +9,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    overflow: hidden;
 
     .testimonials__intro {
       color: $testimonial-text;
@@ -24,7 +25,24 @@
       position: relative;
       display: flex;
       align-items: center;
+      justify-content: center;
       gap: 1rem;
+      position: relative;
+
+      &.is-set {
+        transform: none;
+        transition: transform 0.5s ease-in-out;
+      }
+
+      @include mq(30em) {
+        left: -50%;
+        transform: translateX(50%);
+      }
+
+      @include mq(40em) {
+        left: -33.33333%;
+        transform: translateX(33.33333%);
+      }
 
       .testimonials__card {
         background-color: $testimonial-card;
@@ -32,8 +50,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        min-width: 21rem;
-        max-width: 27rem;
+        flex: 1 0 100%;
 
         .testimonials__image {
           max-width: 5.5rem;
@@ -72,6 +89,14 @@
             padding-bottom: 3rem;
           }
         }
+
+        @include mq(40em) {
+          flex-basis: 50%;
+        }
+
+        @include mq(60em) {
+          flex-basis: 30%;
+        }
       }
 
       .testimonials__controls {
@@ -100,23 +125,9 @@
         }
       }
 
-      .card--previous {
-        background-color: $testimonial-card-inactive;
-        color: $testimonial-text-inactive;
-        font-size: 0.75rem;
-        padding-top: 6.5rem;
+      .testimonials__button {
+        padding: 6rem 0 8rem;
       }
-
-      .card--next {
-        background-color: $testimonial-card-inactive;
-        color: $testimonial-text-inactive;
-        font-size: 0.75rem;
-        padding-top: 6.5rem;
-      }
-    }
-
-    .testimonials__button {
-      padding: 6rem 0 8rem;
     }
   }
 
