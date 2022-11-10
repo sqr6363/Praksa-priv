@@ -13,14 +13,91 @@
 
     .contact {
       padding-block: 2rem;
+
+      span {
+        display: none;
+      }
+
+      @include mq(60em) {
+        text-align: left;
+        padding-block: 2rem;
+        flex: 1;
+
+        span {
+          display: inline-block;
+        }
+
+        &__address {
+          display: flex;
+          gap: 0.75rem;
+          align-items: center;
+
+          span {
+            padding-bottom: 1.5rem;
+          }
+        }
+
+        &__phone {
+          display: flex;
+          gap: 0.75rem;
+          align-items: center;
+          padding-block: 0.75rem;
+        }
+
+        &__email {
+          display: flex;
+          gap: 0.75rem;
+          align-items: center;
+        }
+      }
     }
 
     .footer__logo {
       padding-block: 2rem;
+      display: flex;
+      justify-content: center;
 
       img {
         max-width: 8rem;
       }
+
+      @include mq(60em) {
+        padding-block: 0;
+        flex: 0.5;
+      }
+    }
+
+    .social {
+      &__text {
+        padding-top: 2rem;
+      }
+
+      ul {
+        display: flex;
+        gap: 1rem;
+        padding-block: 3rem;
+
+        img {
+          max-width: 3.5rem;
+        }
+      }
+
+      @include mq(60em) {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex: 1;
+
+        &__text {
+          padding-top: 0;
+          padding-right: 1rem;
+        }
+      }
+    }
+
+    @include mq(60em) {
+      flex-direction: row;
+      justify-content: space-between;
     }
   }
 }
@@ -38,10 +115,15 @@
     padding-block: 2rem;
 
     .sqr {
-      font-weight: 700;
       font-style: italic;
       text-decoration: underline;
       color: $testimonial-text;
+    }
+
+    @include mq(60em) {
+      flex-direction: row;
+      justify-content: space-between;
+      padding-block: 0.5rem;
     }
   }
 }

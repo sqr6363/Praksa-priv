@@ -29,21 +29,6 @@
       gap: 1rem;
       position: relative;
 
-      &.is-set {
-        transform: none;
-        transition: transform 0.5s ease-in-out;
-      }
-
-      @include mq(30em) {
-        left: -50%;
-        transform: translateX(50%);
-      }
-
-      @include mq(40em) {
-        left: -33.33333%;
-        transform: translateX(33.33333%);
-      }
-
       .testimonials__card {
         background-color: $testimonial-card;
         display: flex;
