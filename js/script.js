@@ -1,3 +1,7 @@
+/* import Swiper, { Navigation } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation"; */
+
 const hamburger = document.querySelector(".hamburger");
 const menu = document.querySelector(".navigation");
 
@@ -38,10 +42,8 @@ let showSlides = (n) => {
 
 showSlides(slideIndex);
 
-const carousel = document.querySelector(".testimonials__carousel");
-const items = document.querySelector(".testimonials__card");
-const toggle = document.querySelector(".toggle");
-
-document.addEventListener("click", delegate(toggleFilter, toggleHandler));
+/* const swiper = new Swiper(".swiper", {
+  modules: [Navigation],
+}); */
 
 //# sourceMappingURL=script.js.map

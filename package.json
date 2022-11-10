@@ -1,7 +1,8 @@
 {
   "dependencies": {
     "gulp-cli": "^2.3.0",
-    "sass": "^1.54.3"
+    "sass": "^1.54.3",
+    "swiper": "^8.4.4"
   },
   "name": "brath",
   "version": "1.0.0",
